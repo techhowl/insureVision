@@ -1,0 +1,39 @@
+/* Menu Icon */
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 18px;
+  cursor: pointer;  
+}
+
+.menu-icon div {
+  height: 3px;
+  background-color:aliceblue;
+  border-radius: 2px;
+}
+
+ .btn-success{
+  background-color: #B94C99;
+  border-radius: 20px;  
+}
+
+.btn-success:hover, .btn-success:active {
+  background-color: #B94C99;
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.footer-sticky{
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+  width: 100%;
+  padding: 15px 0;
+}

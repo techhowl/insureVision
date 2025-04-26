@@ -1,0 +1,18 @@
+
+/* Changes done on 25th April */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@import "tailwindcss";
+
+.App{
+    background-image: url("./assets/background.png");
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+body{
+    font-family: "Figtree", sans-serif;
+}

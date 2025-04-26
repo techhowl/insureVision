@@ -1,0 +1,25 @@
+/* Custom style for form-control */
+.contact-form {
+  width: 100%;
+  padding: 10px;
+  color: aliceblue;
+  background: #0E000B26 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+.dropdown {
+  border: 1px solid var(--unnamed-color-b94c99);
+  background: #0E000B26 0% 0% no-repeat padding-box;
+  border: 1px solid #B94C99;
+  border-radius: 10px;
+  opacity: 1;
+  color: white;
+}
+
+.submit-btn {
+  background: #B94C99 0% 0% no-repeat padding-box;
+  border-style: none;
+  opacity: 1;
+}

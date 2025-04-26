@@ -1,0 +1,24 @@
+.section8-text {
+    color: aliceblue;
+    height: 50px;
+    
+}
+
+.section8-img {
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+}
+
+.section8-title {
+    color: aliceblue;
+}
+
+.box {
+    background: var(--unnamed-color-0e000b) 0% 0% no-repeat padding-box;
+    border: 1px solid var(--unnamed-color-b94c99);
+    background: #0E000B 0% 0% no-repeat padding-box;
+    border: 1px solid #B94C99;
+    border-radius: 20px;
+    opacity: 1;
+}
