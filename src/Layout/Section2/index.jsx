@@ -23,7 +23,7 @@ const Section2 = () => {
             trigger: line,
             start: `top+=${index * lineHeight} top`,
             end: `top+=${index * lineHeight + 600} top`,
-            scrub: 0.5,
+            scrub: 3.5,
           },
         }
       );
