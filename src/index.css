@@ -1,5 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/* Changes done on 25th April */
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 @import "tailwindcss";
 
@@ -10,9 +12,6 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-
-
-
-body{
+body, div{
     font-family: "Figtree", sans-serif;
 }

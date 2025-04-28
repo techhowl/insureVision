@@ -63,10 +63,10 @@ const Section4 = () => {
   const currentStep = stepDetails[activeButton];
 
   return (
-    <div className=" text-white w-full h-screen px-[10%] py-10">
+    <div className="text-white w-full h-screen px-[10%] py-10">
       {/* Intro Section */}
       <div>
-        <h3 className="text-sm uppercase text-center tracking-widest font-bold">
+        <h3 className="text-sm uppercase text-center tracking-widest">
           introducing
         </h3>
         <h1 className="text-6xl font-semibold tracking-wider text-center uppercase mt-2">
