@@ -94,7 +94,7 @@ const Section3 = () => {
         <div className="row justify-content-center">
           <div className="col-12">
             <h1 className="text-white text-center mb-5 section3-text">
-              How we will ensure your Safety?
+              How will we ensure your Safety?
             </h1>
             <div className="text-center position-relative">
               <div className="img-reaveal1 d-flex align-items-center justify-content-center">
