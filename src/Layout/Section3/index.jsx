@@ -116,10 +116,10 @@ const Section3 = () => {
                   <div className="row mx-0 justify-content-center">
                     <div className="col-md-6">
                       <div className="step-inner text-center">
-                        <p className="mb-0">
-                          <u>Next Gen Risk Understanding.</u>
+                        <p className="mb-0 fw-bold folds-heading">
+                          <u>Next Gen Risk Understanding</u>
                         </p>
-                        <p className="mt-2">
+                        <p className="mt-2 para-text">
                           By bringing the true context into the equation and
                           observing drivers over time, we’re radically
                           increasing the accuracy of risk assessment. This will
@@ -138,10 +138,10 @@ const Section3 = () => {
                   <div className="row mx-0">
                     <div className="col-md-5 d-flex align-items-center">
                       <div className="step-inner text-center">
-                        <p className="mb-0">
+                        <p className="mb-0 fw-bold folds-heading">
                           <u>Real Time Accident Prevention</u>
                         </p>
-                        <p className="mt-2">
+                        <p className="mt-2 para-text">
                           Our AI doesn't just measure risk—it anticipates it in
                           its earliest stages, alerting drivers and activating
                           preventive measures seconds before potential accidents
@@ -159,10 +159,10 @@ const Section3 = () => {
                   <div className="row mx-0 justify-content-end">
                     <div className="col-md-5 d-flex align-items-center flex-row-reverse">
                       <div className="step-inner text-center">
-                        <p className="mb-0">
+                        <p className="mb-0 fw-bold folds-heading">
                           <u>Super Charge Existing Video Telematics</u>
                         </p>
-                        <p className="mt-2">
+                        <p className="mt-2 para-text">
                           Transform your existing dashcam infrastructure into a
                           sophisticated risk intelligence system. InsureVision's
                           hardware-agnostic platform extracts actionable,

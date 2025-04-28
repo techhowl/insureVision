@@ -10,12 +10,18 @@
 }
 
 .dropdown {
-  border: 1px solid var(--unnamed-color-b94c99);
-  background: #0E000B26 0% 0% no-repeat padding-box;
+  appearance: none; /* Remove default arrow */
+  -webkit-appearance: none; /* For Safari */
+  -moz-appearance: none; /* For Firefox */
+  
   border: 1px solid #B94C99;
+  background: #0E000B26 url('../../assets/dropdown.png') no-repeat right 1rem center;
+  background-size: 16px; /* Adjust based on your PNG size */
   border-radius: 10px;
   opacity: 1;
   color: white;
+  padding-right: 2.5rem; /* Give space for the image */
+  padding-left: 1rem; /* Your text padding */
 }
 
 .submit-btn {

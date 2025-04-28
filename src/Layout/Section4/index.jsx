@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
+import "./Section4.css"
 
 const stepDetails = [
   {
@@ -6,6 +7,7 @@ const stepDetails = [
     description:
       "Accessing and extracting available video data from existing dashcams or from our high tech AI powered dashcams in vehicles and fleets.",
     bgColor: "#b94c99",
+    fontFamily: "Figtree, sans-serif",
     bullets: ["AI Dashcams", "Video Extraction", "Video Uploads"],
   },
   {
@@ -13,6 +15,7 @@ const stepDetails = [
     description:
       "Extracted video data is analysed on the edge or in the cloud into actionable risk insights, delivering driver-level risk prediction and real-time accident prevention.",
     bgColor: "#3b82f6",
+    fontFamily: "Figtree, sans-serif",
     bullets: ["Driver Behaviour", "Road Risk Patterns", "Driver Alert"],
   },
   {
@@ -20,6 +23,7 @@ const stepDetails = [
     description:
       "In the long term, risk insights are utilised for driver behaviour and patterns with personalized feedback, behaviour modification suggestions and fleet/driver monitoring services.",
     bgColor: "#10b981",
+    fontFamily: "Figtree, sans-serif",
     bullets: ["Personalized Feedback", "Driver/Fleet Monitoring", "Behaviour Modification"],
   },
 ];
@@ -63,19 +67,19 @@ const Section4 = () => {
   const currentStep = stepDetails[activeButton];
 
   return (
-    <div className="text-white w-full h-screen p-[15%]">
+    <div className="text-white w-full h-screen p-[10%]">
       {/* Intro Section */}
       <div>
-        <h3 className="text-sm uppercase text-center tracking-widest">
+        <h3 className="text-sm uppercase text-center tracking-widest S4heading-1">
           introducing
         </h3>
-        <h1 className="text-6xl font-semibold tracking-wider text-center uppercase mt-2">
+        <h1 className="text-6xl font-semibold tracking-wider text-center uppercase mt-2 S4heading-2">
           Enviromatics
         </h1>
-        <h1 className="text-3xl font-normal tracking-wider text-center uppercase mt-2">
+        <h1 className="text-3xl font-normal tracking-wider text-center uppercase mt-2 S4heading-3">
           Telematics 2.0
         </h1>
-        <p className="text-[#b94c99] text-center capitalize text-sm mt-4 font-medium">
+        <p className="text-[#b94c99] text-center capitalize text-sm mt-4 font-medium S4pink-text">
           technology built based on real world scenarios
         </p>
       </div>
@@ -90,12 +94,12 @@ const Section4 = () => {
                 setProgress(0);
                 setConnectorProgress(0);
               }}
-              className={`border uppercase border-slate-200 rounded-full py-4 text-xs w-full flex items-center justify-between pl-4 relative overflow-hidden ${
-                activeButton === index ? "border-[#b94c99]" : ""
+              className={`border-2 uppercase rounded-full py-4 text-xs w-full flex items-center justify-between pl-6 relative overflow-hidden ${
+                activeButton === index ? "border-[#b94c99]" : "border-slate-200"
               }`}
             >
               <span className="z-10">{step.title}</span>
-              <div className="absolute bottom-50 right-0 w-36 h-0.5 flex z-40">
+              <div className="absolute bottom-50 right-0 w-32 h-0.5 flex z-40">
                 <div
                   className="h-full transition-all duration-100"
                   style={{
