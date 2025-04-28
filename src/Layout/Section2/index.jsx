@@ -23,7 +23,7 @@ const Section2 = () => {
             trigger: line,
             start: `top+=${index * lineHeight} top`,
             end: `top+=${index * lineHeight + 600} top`,
-            scrub: 3.5,
+            scrub: 0.5,
           },
         }
       );
@@ -45,7 +45,7 @@ const Section2 = () => {
   }, []);
 
   return (
-    <section className="min-vh-100 d-flex align-items-center justify-content-center ">
+    <section className="min-vh-100 w-full d-flex align-items-center justify-content-center ">
       <div className="container-fluid">
         <div className="row justify-content-center">
           <div className="col-12 ">

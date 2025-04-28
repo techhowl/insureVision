@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import "./Section3.css"
-import roadImg from "../../assets/roadImg.png"
-import placeholderImg from "../../assets/placeholder.png"
+import "./Section3.css";
+import roadImg from "../../assets/roadImg.png";
+import placeholderImg from "../../assets/placeholder.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -16,7 +16,10 @@ const Section3 = () => {
     const step2 = document.querySelector(".instruc-step2");
     const step3 = document.querySelector(".instruc-step3");
 
-    gsap.set([img1, img2, step1, step2, step3], { autoAlpha: 0, display: "none" });
+    gsap.set([img1, img2, step1, step2, step3], {
+      autoAlpha: 0,
+      display: "none",
+    });
 
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -31,72 +34,72 @@ const Section3 = () => {
 
     // Animate first image
     tl.set(img1, { display: "block", width: "25%" })
-      .to(img1, { 
-        autoAlpha: 1,
-        duration: 0.5 
-      })
-      .to(img1, { 
-        width: "100%", 
-        ease: "power2.out", 
-        duration: 1 
-      })
-
-    // Animate second image
-      .set(img2, { display: "block", width: "15%" })
-      .to(img2, { 
+      .to(img1, {
         autoAlpha: 1,
         duration: 0.5,
       })
-      .to(img2, { 
+      .to(img1, {
+        width: "100%",
+        ease: "power2.out",
+        duration: 1,
+      })
+
+      // Animate second image
+      .set(img2, { display: "block", width: "15%" })
+      .to(img2, {
+        autoAlpha: 1,
+        duration: 0.5,
+      })
+      .to(img2, {
         width: "20%",
         ease: "power2.out",
-        duration: 1
+        duration: 1,
       })
 
-    // Reveal Step 1
+      // Reveal Step 1
       .set(step1, { display: "block" })
-      .to(step1, { 
+      .to(step1, {
         autoAlpha: 1,
         y: 0,
         duration: 0.8,
-        ease: "power2.out"
+        ease: "power2.out",
       })
 
-    // Reveal Step 2
+      // Reveal Step 2
       .set(step2, { display: "block" })
-      .to(step2, { 
+      .to(step2, {
         autoAlpha: 1,
         y: 0,
         duration: 0.8,
-        ease: "power2.out"
+        ease: "power2.out",
       })
 
-    // Reveal Step 3
+      // Reveal Step 3
       .set(step3, { display: "block" })
-      .to(step3, { 
+      .to(step3, {
         autoAlpha: 1,
         y: 0,
         duration: 0.8,
-        ease: "power2.out"
+        ease: "power2.out",
       });
 
     return () => {
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, []);
 
   return (
-    <section className="instruction-section min-vh-100 d-flex align-items-center justify-content-center py-5 bg-black">
-      <div className="container">
+    <section className="instruction-section min-vh-100 d-flex align-items-center justify-content-center py-5">
+      <div className="container-fluid">
         <div className="row justify-content-center">
           <div className="col-12">
-            <h1 className="text-white text-center mb-5">
+            <h1 className="text-white text-center mb-5 section3-text">
               How we will ensure your Safety?
             </h1>
             <div className="text-center position-relative">
               <div className="img-reaveal1 d-flex align-items-center justify-content-center">
                 <img
-                  src= {roadImg}
+                  src={roadImg}
                   className="img-reveal-img rounded-2"
                   style={{
                     display: "none",
@@ -109,12 +112,20 @@ const Section3 = () => {
               </div>
 
               <div className="img-reaveal2 d-flex align-items-center justify-content-center position-absolute h-100 top-0 w-100 start-0 z-index-10">
-                
                 <div className="instruc-step1 position-absolute start-0 w-100">
                   <div className="row mx-0 justify-content-center">
                     <div className="col-md-6">
                       <div className="step-inner text-center">
-                        <p className="mb-0">Step 1: Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <p className="mb-0">
+                          <u>Next Gen Risk Understanding.</u>
+                        </p>
+                        <p className="mt-2">
+                          By bringing the true context into the equation and
+                          observing drivers over time, we’re radically
+                          increasing the accuracy of risk assessment. This will
+                          make it possible to identify and take action with the
+                          riskiest drivers in your fleet.
+                        </p>
                       </div>
                       <div className="step-count">
                         <span>1</span>
@@ -127,7 +138,15 @@ const Section3 = () => {
                   <div className="row mx-0">
                     <div className="col-md-5 d-flex align-items-center">
                       <div className="step-inner text-center">
-                        <p className="mb-0">Step 2: Inventore obcaecati perferendis nemo placeat tempora.</p>
+                        <p className="mb-0">
+                          <u>Real Time Accident Prevention</u>
+                        </p>
+                        <p className="mt-2">
+                          Our AI doesn't just measure risk—it anticipates it in
+                          its earliest stages, alerting drivers and activating
+                          preventive measures seconds before potential accidents
+                          occur. Not just smarter insurance—safer roads.
+                        </p>
                       </div>
                       <div className="step-count">
                         <span>2</span>
@@ -140,7 +159,16 @@ const Section3 = () => {
                   <div className="row mx-0 justify-content-end">
                     <div className="col-md-5 d-flex align-items-center flex-row-reverse">
                       <div className="step-inner text-center">
-                        <p className="mb-0">Step 3: Possimus at earum ipsum facere laudantium!</p>
+                        <p className="mb-0">
+                          <u>Super Charge Existing Video Telematics</u>
+                        </p>
+                        <p className="mt-2">
+                          Transform your existing dashcam infrastructure into a
+                          sophisticated risk intelligence system. InsureVision's
+                          hardware-agnostic platform extracts actionable,
+                          underwriting-grade insights from cameras you already
+                          have.
+                        </p>
                       </div>
                       <div className="step-count">
                         <span>3</span>
@@ -150,7 +178,7 @@ const Section3 = () => {
                 </div>
 
                 <img
-                  src= {placeholderImg}
+                  src={placeholderImg}
                   className="img-reveal-img2 rounded-2"
                   style={{
                     display: "none",
@@ -161,7 +189,6 @@ const Section3 = () => {
                   alt=""
                 />
               </div>
-
             </div>
           </div>
         </div>

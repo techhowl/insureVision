@@ -11,6 +11,9 @@
   white-space: nowrap;
   min-width: 100%;
   margin-bottom: 15px;
+  font-family: "Figtree", sans-serif;
+    font-size: 48px;
+    font-weight: light;
 }
 
 .base-text,
@@ -22,14 +25,12 @@
   width: 100%;
   text-align: center;
    height: 274px;
-   font-size: 48px;
-   font-weight: light;
-}
+  }
 
 .base-text {
   color: white;
   z-index: 1;
-  opacity: 0.2;
+  opacity: 1;
 }
 
 .purple-text {

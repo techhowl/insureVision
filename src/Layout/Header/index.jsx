@@ -48,7 +48,7 @@ const Header = ({ scrollToSection }) => {
   return (
     <>
       <div className="header row mx-0 justify-content-between align-items-center fw-bold my-2 pt-3 mb-5">
-        <div className="col text-start">
+        <div className="col text-start ml-8">
           <div className="menu-icon">
             <div></div>
             <div></div>
@@ -59,7 +59,7 @@ const Header = ({ scrollToSection }) => {
           
           <img src={headerImg} className="label mx-auto" />
         </div>
-        <div className="col text-end">
+        <div className="col text-end button-styling">
           <button className="btn btn-success no-hover" onClick={scrollToSection}>
             GET IN TOUCH
           </button>
@@ -68,15 +68,15 @@ const Header = ({ scrollToSection }) => {
       <div className="footer-sticky">
         <div class="container-fluid">
           <div className="row">
-            <div className="col-6 d-flex justify-content-start gap-2">
-              <button className="btn btn-outline-primary">Facebook</button>
-              <button className="btn btn-outline-primary">Instagram</button>
-              <button className="btn btn-outline-primary">Blogs</button>
+            <div className="col-6 d-flex justify-content-start gap-2 ml-0.3">
+              <button className="btn btn-outline-primary social-btn">Facebook</button>
+              <button className="btn btn-outline-primary social-btn">Instagram</button>
+              <button className="btn btn-outline-primary social-btn">Blogs</button>
             </div>
-            <div className="col-6 d-flex justify-content-end gap-2">
-              <button className="btn btn-outline-secondary">Solutions</button>
-              <button className="btn btn-outline-secondary">Software</button>
-              <button className="btn btn-outline-secondary">Leadership</button>
+            <div className="col-6 d-flex justify-content-end gap-2 mr-0.4">
+              <button className="btn btn-outline-secondary social-btn">Solutions</button>
+              <button className="btn btn-outline-secondary social-btn">Software</button>
+              <button className="btn btn-outline-secondary social-btn">Leadership</button>
             </div>
           </div>
         </div>
