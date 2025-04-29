@@ -117,7 +117,7 @@ const Section3 = () => {
                     <div className="col-md-6">
                       <div className="step-inner text-center">
                         <p className="mb-0 fw-bold folds-heading">
-                          <u>Next Gen Risk Understanding</u>
+                          Next Gen Risk Understanding
                         </p>
                         <p className="mt-2 para-text">
                           By bringing the true context into the equation and
@@ -138,10 +138,10 @@ const Section3 = () => {
                   <div className="row mx-0">
                     <div className="col-md-5 d-flex align-items-center">
                       <div className="step-inner text-center">
-                        <p className="mb-0 fw-bold folds-heading">
-                          <u>Real Time Accident Prevention</u>
+                        <p className="mb-0 fw-bold folds-heading text-start">
+                          Real Time Accident Prevention
                         </p>
-                        <p className="mt-2 para-text">
+                        <p className="mt-2 para-text text-width-1 text-start">
                           Our AI doesn't just measure risk—it anticipates it in
                           its earliest stages, alerting drivers and activating
                           preventive measures seconds before potential accidents
@@ -158,11 +158,11 @@ const Section3 = () => {
                 <div className="instruc-step3 position-absolute w-100">
                   <div className="row mx-0 justify-content-end">
                     <div className="col-md-5 d-flex align-items-center flex-row-reverse">
-                      <div className="step-inner text-center">
-                        <p className="mb-0 fw-bold folds-heading">
-                          <u>Super Charge Existing Video Telematics</u>
+                      <div className="step-inner text-end">
+                        <p className="mb-0 fw-bold folds-heading text-end">
+                          Super Charge Existing Video Telematics
                         </p>
-                        <p className="mt-2 para-text">
+                        <p className="mt-2  para-text text-width-2  text-end">
                           Transform your existing dashcam infrastructure into a
                           sophisticated risk intelligence system. InsureVision's
                           hardware-agnostic platform extracts actionable,

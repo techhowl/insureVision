@@ -69,3 +69,11 @@
 font-size: 24px;
 }
   
+.text-width-1{
+  width: 414px;
+}
+
+.text-width-2{
+  width: 404px;
+  display: inline-flex;
+}

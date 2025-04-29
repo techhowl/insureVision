@@ -5,10 +5,11 @@ import bannerImg from "../../assets/banner.png";
 
 const Section1 = () => {
   return (
-    <section>
+    
+    <section className="section-1">
       <div className="row mx-0">
         <div className="col-12 px-0 position-relative">
-          <img src={bannerImg} alt="" className="w-100" />
+          <img src={bannerImg} alt="" className="w-100 banner" />
           <div className="main-banner-content position-absolute top-0 start-0 w-100 min-vh-100 d-flex align-items-center justify-content-center">
             <div className="row w-100 mx-0">
               <div className="col-md-6 image-container mx-auto">

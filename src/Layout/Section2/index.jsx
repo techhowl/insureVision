@@ -45,13 +45,13 @@ const Section2 = () => {
   }, []);
 
   return (
-    <section className="min-vh-100 w-full d-flex align-items-center justify-content-center ">
+    <section className="w-full d-flex align-items-center justify-content-center ">
       <div className="container-fluid">
         <div className="row justify-content-center">
           <div className="col-12 ">
             <div
               className="text-section d-flex flex-column justify-content-center align-items-center text-center"
-              style={{ minHeight: "100vh" }}
+              style={{ minHeight: "80vh" }}
             >
               <div className="line-wrapper">
                 <span className="base-text">

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap'); */
 
 @import "tailwindcss";
 
@@ -17,3 +17,12 @@
 body, div{
     font-family: "Figtree", sans-serif;
 }
+
+/* h1 {
+    font-size: 4rem !important;
+    font-weight: bold !important;
+    margin-bottom: 1rem !important;
+    line-height: 1.2 !important;
+  }
+   */
+

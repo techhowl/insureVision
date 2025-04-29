@@ -8,7 +8,7 @@
 .line-wrapper {
   position: relative;
   height: 2.5rem;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   min-width: 100%;
   margin-bottom: 15px;
   font-family: "Figtree", sans-serif;

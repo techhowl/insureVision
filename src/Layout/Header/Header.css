@@ -53,3 +53,20 @@
 .button-styling{
   margin-right: 12px;
 }
+
+.custom-btn {
+  border: 1px solid #b94c99;
+  color: #b94c99;
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px; /* pill shape */
+  transition: all 0.3s ease-in-out;
+  background-color: transparent;
+}
+
+.custom-btn:hover,
+.custom-btn:active {
+  background-color: #b94c99;
+  color: white;
+}
+
+

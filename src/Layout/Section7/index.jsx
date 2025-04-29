@@ -6,7 +6,7 @@ const index = ({ sectionRef }) => {
     <div className="container">
       <div className="row mx-0">
         {/* Left side column (currently empty) */}
-        <div className="col-6">
+        <div className="col-12 col-md-6 mb-2 mb-md-0">
           <p style={{ fontSize: "10px", color: "#B94C99" }}>CONTACT US</p>
           <h1 className="text-white">Deploying Across</h1>
           <h1 className="text-white">The Eco-System</h1>
@@ -46,7 +46,7 @@ const index = ({ sectionRef }) => {
         </div>
 
         {/* Right side column with form */}
-        <div className="col-6" ref={sectionRef}>
+        <div className="col-12 col-md-6" ref={sectionRef}>
           {/* Name Input */}
           <div className="mb-3">
             <input

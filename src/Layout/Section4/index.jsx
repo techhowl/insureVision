@@ -1,29 +1,27 @@
+// 
+
 import React, { useEffect, useState, useRef } from "react";
-import "./Section4.css"
 
 const stepDetails = [
   {
-    title: "ACCESS & EXTRACT",
+    title: "access & extract",
     description:
       "Accessing and extracting available video data from existing dashcams or from our high tech AI powered dashcams in vehicles and fleets.",
     bgColor: "#b94c99",
-    fontFamily: "Figtree, sans-serif",
     bullets: ["AI Dashcams", "Video Extraction", "Video Uploads"],
   },
   {
-    title: "ANALYZE & PREDICT",
+    title: "analyze & predict",
     description:
       "Extracted video data is analysed on the edge or in the cloud into actionable risk insights, delivering driver-level risk prediction and real-time accident prevention.",
     bgColor: "#3b82f6",
-    fontFamily: "Figtree, sans-serif",
     bullets: ["Driver Behaviour", "Road Risk Patterns", "Driver Alert"],
   },
   {
-    title: "COACH & IMPROVE",
+    title: "coach & improve",
     description:
       "In the long term, risk insights are utilised for driver behaviour and patterns with personalized feedback, behaviour modification suggestions and fleet/driver monitoring services.",
     bgColor: "#10b981",
-    fontFamily: "Figtree, sans-serif",
     bullets: ["Personalized Feedback", "Driver/Fleet Monitoring", "Behaviour Modification"],
   },
 ];
@@ -67,25 +65,25 @@ const Section4 = () => {
   const currentStep = stepDetails[activeButton];
 
   return (
-    <div className="text-white w-full h-screen p-[10%]">
+    <div className="text-white w-full h-auto md:h-screen px-4 xl:px-[10%] py-50">
       {/* Intro Section */}
       <div>
-        <h3 className="text-sm uppercase text-center tracking-widest S4heading-1">
+        <h3 className="text-sm uppercase text-center tracking-widest font-bold">
           introducing
         </h3>
-        <h1 className="text-6xl font-semibold tracking-wider text-center uppercase mt-2 S4heading-2">
+        <h1 className="text-4xl sm:text-6xl font-semibold tracking-wider text-center uppercase mt-2">
           Enviromatics
         </h1>
-        <h1 className="text-3xl font-normal tracking-wider text-center uppercase mt-2 S4heading-3">
+        <h1 className="text-2xl sm:text-3xl font-normal tracking-wider text-center uppercase mt-2">
           Telematics 2.0
         </h1>
-        <p className="text-[#b94c99] text-center capitalize text-sm mt-4 font-medium S4pink-text">
+        <p className="text-[#b94c99] text-center capitalize text-xs sm:text-lg mt-4 font-medium">
           technology built based on real world scenarios
         </p>
       </div>
 
       {/* Progress Buttons */}
-      <div ref={sectionRef} className="flex mt-7 gap-x-0 w-full max-w-5xl mx-auto">
+      <div ref={sectionRef} className="flex flex-col sm:flex-row mt-7 gap-x-0 gap-y-5 sm:gap-y-0 w-full max-w-5xl mx-auto">
         {stepDetails.map((step, index) => (
           <div key={index} className="relative flex items-center flex-1">
             <button
@@ -94,12 +92,12 @@ const Section4 = () => {
                 setProgress(0);
                 setConnectorProgress(0);
               }}
-              className={`border-2 uppercase rounded-full py-4 text-xs w-full flex items-center justify-between pl-6 relative overflow-hidden ${
+              className={`border-2 uppercase rounded-full py-4 text-xs w-full flex items-center justify-between pl-4 relative overflow-hidden ${
                 activeButton === index ? "border-[#b94c99]" : "border-slate-200"
               }`}
             >
               <span className="z-10">{step.title}</span>
-              <div className="absolute bottom-50 right-0 w-32 h-0.5 flex z-40">
+              <div className="absolute bottom-50 right-0 w-36 md:w-14 lg:w-24 xl:w-36 h-0.5 flex z-40">
                 <div
                   className="h-full transition-all duration-100"
                   style={{
@@ -117,7 +115,7 @@ const Section4 = () => {
               </div>
             </button>
             {index < stepDetails.length - 1 && (
-              <div className="w-12 h-0.5 bg-white relative">
+              <div className="hidden sm:block w-12 h-0.5 bg-white relative">
                 <div
                   className="absolute left-0 top-0 h-full transition-all duration-100"
                   style={{
@@ -138,12 +136,12 @@ const Section4 = () => {
       </div>
 
       {/* Content Section */}
-      <div className="mt-7 flex w-full max-w-5xl mx-auto justify-center gap-x-5">
-        <div className="w-5/12 flex flex-col justify-between py-3">
-          <h4 className="text-slate-200 text-sm leading-relaxed w-10/12 capitalize">
+      <div className="mt-7 flex flex-col sm:flex-row w-full md:w-10/12 max-w-5xl mx-auto justify-center gap-x-5 gap-y-5 sm:gap-y-0">
+        <div className="w-full sm:w-1/2 xl:w-5/12 flex flex-col gap-y-7 sm:gap-y-0 justify-between py-3">
+          <h4 className="text-slate-200 text-sm leading-relaxed w-full sm:w-10/12 capitalize">
             {currentStep.description}
           </h4>
-          <div className="flex flex-col mt-5 gap-7">
+          <div className="flex flex-col gap-7">
             {currentStep.bullets.map((line, idx) => (
               <div key={idx} className="flex items-center gap-x-5">
                 <svg
@@ -160,8 +158,8 @@ const Section4 = () => {
             ))}
           </div>
         </div>
-        <div className="w-4/12">
-          <div className="w-full h-100" style={{ backgroundColor: currentStep.bgColor }} />
+        <div className="w-full sm:w-1/2 xl:w-4/12">
+          <div className="w-full h-80" style={{ backgroundColor: currentStep.bgColor }} />
         </div>
       </div>
     </div>

@@ -1,3 +1,4 @@
+
 import React, { useEffect } from "react";
 import "./Header.css";
 import headerImg from "../../assets/logo.png";
@@ -48,7 +49,7 @@ const Header = ({ scrollToSection }) => {
   return (
     <>
       <div className="header row mx-0 justify-content-between align-items-center fw-bold my-2 pt-3 mb-5">
-        <div className="col text-start ml-8">
+        <div className="col text-start">
           <div className="menu-icon">
             <div></div>
             <div></div>
@@ -58,11 +59,10 @@ const Header = ({ scrollToSection }) => {
         <div className="col company-name text-center ">
           <img src={headerImg} className="label mx-auto" />
         </div>
-        <div className="col text-end button-styling">
-          
+        <div className="col text-end">
           <button
+            className="btn btn-success no-hover"
             onClick={scrollToSection}
-            className="bg-[#b94c99] text-white rounded-full px-6 py-2  border-[#b94c99] transition-all active:bg-transparent active:text-white active:border-[#b94c99] mr-2"
           >
             GET IN TOUCH
           </button>
@@ -71,31 +71,18 @@ const Header = ({ scrollToSection }) => {
       <div className="footer-sticky">
         <div class="container-fluid">
           <div className="row">
-            <div className="col-6 d-flex justify-content-start gap-2 ml-0.3">
-              <button className="border border-[#b94c99] text-[#b94c99] px-6 py-2 rounded-full transition-all duration-300 hover:bg-[#b94c99] hover:text-white active:bg-[#b94c99] active:text-white">
-                Facebook
-              </button>
-
-              <button className="border border-[#b94c99] text-[#b94c99] px-6 py-2 rounded-full transition-all duration-300 hover:bg-[#b94c99] hover:text-white active:bg-[#b94c99] active:text-white">
-                Instagram
-              </button>
-
-              <button className="border border-[#b94c99] text-[#b94c99] px-6 py-2 rounded-full transition-all duration-300 hover:bg-[#b94c99] hover:text-white active:bg-[#b94c99] active:text-white">
-                Blogs
-              </button>
+            {/* Left Buttons: Facebook, Instagram, Blogs */}
+            <div className="col-12 col-md-6 d-flex flex-wrap justify-content-center justify-content-md-start gap-2 mb-3 mb-md-0">
+              <button className="btn custom-btn">Facebook</button>
+              <button className="btn custom-btn">Instagram</button>
+              <button className="btn custom-btn">Blogs</button>
             </div>
-            <div className="col-6 d-flex justify-content-end gap-2 mr-0.4">
-              <button className="border border-[#b94c99] text-[#b94c99] px-6 py-2 rounded-full transition-all duration-300 hover:bg-[#b94c99] hover:text-white active:bg-[#b94c99] active:text-white">
-                Solutions
-              </button>
 
-              <button className="border border-[#b94c99] text-[#b94c99] px-6 py-2 rounded-full transition-all duration-300 hover:bg-[#b94c99] hover:text-white active:bg-[#b94c99] active:text-white">
-                Software
-              </button>
-
-              <button className="border border-[#b94c99] text-[#b94c99] px-6 py-2 rounded-full transition-all duration-300 hover:bg-[#b94c99] hover:text-white active:bg-[#b94c99] active:text-white">
-                Leadership
-              </button>
+            {/* Right Buttons: Solutions, Software, Leadership */}
+            <div className="col-12 col-md-6 d-flex flex-wrap justify-content-center justify-content-md-end gap-2">
+              <button className="btn custom-btn">Solutions</button>
+              <button className="btn custom-btn">Software</button>
+              <button className="btn custom-btn">Leadership</button>
             </div>
           </div>
         </div>
