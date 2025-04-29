@@ -39,13 +39,15 @@ const Section2 = () => {
       markers: false, // set to true if you want to debug
     });
 
+    ScrollTrigger.refresh()
+
     return () => {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, []);
 
   return (
-    <section className="w-full d-flex align-items-center justify-content-center ">
+    <section className="w-full d-flex align-items-center justify-content-center section-2">
       <div className="container-fluid">
         <div className="row justify-content-center">
           <div className="col-12 ">

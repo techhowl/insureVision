@@ -9,7 +9,7 @@ import arrowdownimg from "../../assets/arrowdown.png"
 
 gsap.registerPlugin(ScrollTrigger)
 
-export default function LeadershipTestimonial(){
+const Section6 = () => {
   const [activeMember, setActiveMember] = useState(1)
   const containerRef = useRef(null)
   const sectionRef = useRef(null)
@@ -568,4 +568,5 @@ combining AI, hardware innovation,
     </div>
   </div>
 )
-}
+};
+export default Section6;

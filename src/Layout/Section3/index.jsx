@@ -82,6 +82,8 @@ const Section3 = () => {
         duration: 0.8,
         ease: "power2.out",
       });
+       
+      ScrollTrigger.refresh();
 
     return () => {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
