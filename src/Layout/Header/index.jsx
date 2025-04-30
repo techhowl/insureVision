@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import "./Header.css";
 import headerImg from "../../assets/logo.png";
@@ -47,8 +46,8 @@ const Header = ({ scrollToSection }) => {
     };
   }, []);
   return (
-    <>
-      <div className="header row mx-0 justify-content-between align-items-center fw-bold my-2 pt-3 mb-5">
+    <div className="header container-fluid">
+      <div className=" row mx-0 justify-content-between align-items-center fw-bold my-2 pt-3 mb-5">
         <div className="col text-start">
           <div className="menu-icon">
             <div></div>
@@ -87,8 +86,9 @@ const Header = ({ scrollToSection }) => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
 export default Header;
+

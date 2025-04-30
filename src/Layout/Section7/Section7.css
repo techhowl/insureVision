@@ -1,7 +1,40 @@
-/* Custom style for form-control */
+/* Custom style for form-control
 .contact-form {
   width: 100%;
   padding: 10px;
+  color: aliceblue;
+  background: #0E000B26 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+.dropdown {
+  appearance: none; 
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  
+  border: 1px solid #B94C99;
+  background: #0E000B26 url('../../assets/dropdown.png') no-repeat right 1rem center;
+  background-size: 16px; 
+  border-radius: 10px;
+  opacity: 1;
+  color: white;
+  padding-right: 2.5rem; 
+  padding-left: 1rem; 
+}
+
+.submit-btn {
+  background: #B94C99 0% 0% no-repeat padding-box;
+  border-style: none;
+  opacity: 1;
+} */
+
+
+/* Custom style for form-control */
+.contact-form {
+  width: 100%;
+  padding: 10px 29px;
   color: aliceblue;
   background: #0E000B26 0% 0% no-repeat padding-box;
   border: 1px solid #707070;

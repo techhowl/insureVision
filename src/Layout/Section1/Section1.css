@@ -1,4 +1,4 @@
-.image-container {
+/* .image-container {
     position: relative;
   }
 
@@ -46,17 +46,65 @@
     font-weight: light;
   }
 
-  .btn-outline-primary{
-    background: var(--unnamed-color-0e000b) 0% 0% no-repeat padding-box;
-    border: 1px solid var(--unnamed-color-b94c99);
-    background: #0E000B 0% 0% no-repeat padding-box;
-    border: 1px solid #B94C99;
-    border-radius: 20px;
-    opacity: 1;
-    color: aliceblue;
-  }
+     .section-1{
+      min-height: 100vh;
+    }
+     */
 
-    .btn-outline-secondary {
+     .image-container {
+      position: relative;
+    }
+  
+    .bottom-text {
+      font-size: 24px;
+      font-weight: lighter;
+    }
+    
+    .overlay-text {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      width: 100%;
+      padding: 10px;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+      font-family: "Figtree", sans-serif;
+      font-weight: bold;
+      font-size: 90;
+    }
+  
+    .top-text{
+        margin-bottom: -130px;
+        position: relative;
+    }
+  
+    .overlay-text h5{
+      font-size: 25px;
+    }
+    
+    .top-text h1{
+      font-size: 70px;
+      font-weight: bold;
+    }
+    
+    .bottom-text {
+      bottom:10%;
+      font-family: "Figtree", sans-serif;
+      font-size: 24px;
+      font-weight: light;
+    }
+  
+    p{
+      margin-bottom: 0;
+    }
+  
+    .text-msg{
+      color: #b94c99;
+      font-size: 24px;
+      font-weight: light;
+    }
+  
+    .btn-outline-primary{
       background: var(--unnamed-color-0e000b) 0% 0% no-repeat padding-box;
       border: 1px solid var(--unnamed-color-b94c99);
       background: #0E000B 0% 0% no-repeat padding-box;
@@ -65,15 +113,46 @@
       opacity: 1;
       color: aliceblue;
     }
-
-    .section-1{
-      min-height: 100vh;
+  
+      .btn-outline-secondary {
+        background: var(--unnamed-color-0e000b) 0% 0% no-repeat padding-box;
+        border: 1px solid var(--unnamed-color-b94c99);
+        background: #0E000B 0% 0% no-repeat padding-box;
+        border: 1px solid #B94C99;
+        border-radius: 20px;
+        opacity: 1;
+        color: aliceblue;
+      }
+  
+      .section-1{
+        min-height: 100vh;
+      }
+      
+  
+      .main-banner-content{
+        padding: 120px 0 0;
+      }
+  
+      @media(min-width: 1400px){
+          
+      .main-banner-content{
+        padding: 150px 0 0;
+      }
+  
+      .top-text h1{
+        font-size: 90px;
+        font-weight: bold;
+      }
+  
+      .top-text{
+        margin-bottom: -230px;
+        position: relative;
     }
-    
-
-    
-    
-    
- 
-
-    
+      }
+  
+      
+      
+      
+   
+  
+      
