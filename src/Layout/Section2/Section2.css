@@ -37,3 +37,7 @@
   z-index: 2;
   clip-path: inset(0 100% 0 0);
 }
+
+.text-line{
+margin-top: 300px;
+}

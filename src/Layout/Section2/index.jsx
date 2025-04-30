@@ -2,6 +2,7 @@ import React,{ useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./Section2.css";
+import T_img from "../../assets/belowT.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -94,6 +95,9 @@ const Section2 = () => {
                   as drivers... InsureVision analyses risk contextually just
                   like humans.
                 </span>
+              </div>
+              <div className="text-line">
+                <img src={T_img} alt="line"/>
               </div>
             </div>
           </div>
